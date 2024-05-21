@@ -4,10 +4,9 @@ const fs = require("fs");
 const path = require('path');
 const PDFDocument = require('pdfkit');
 const nodemailer = require('nodemailer');
-const router = new express.Router();
 const Student = require("../models/Students")
 var publicDir = path.join(__dirname, '../public');
-
+const router = express.Router();
 
 const imageStorage = multer.diskStorage({
   // Destination to store image     
